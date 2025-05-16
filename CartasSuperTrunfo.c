@@ -1,58 +1,96 @@
 #include <stdio.h>
 
-// Desafio Super Trunfo - Países
-// Tema 1 - Cadastro das Cartas
-// Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
-// Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+//carta 1 desafio super trunfo
+int main(){
 
-int main() {
-    // Sugestão: Defina variáveis separadas para cada atributo da cidade.
-    // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
+    char estado1; //uma letra de 'A' a 'H'
+    char codigocarta1[20];  //A letra do estado seguido de um número.
+    char nomecidade1[50];  // Nome da cidade
+    int populacao; // Número de habitantes
+    float area;  // Área da cidade em km²
+    float pib;  // Produto Interno Bruto
+    int pontosturisticos; // Número de pontos turísticos
 
-    int codigo;
-    char nome [100];
-    int populacao;
-    float area;
-    float pib;
-    int pontos_turisticos;
+    // Leitura dos dados da primeira carta
+    printf("Digite o Estado: \n");
+    scanf(" %c", &estado1);
 
-    
-    // Cadastro das Cartas:    
-    // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
-    // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
-    printf("Digite o código da cidade: ");
-    scanf("%d", &codigo);
+    printf("Digite o código da carta: \n");
+    scanf("%s", codigocarta1);
 
-    print("Digite o nome da cidade: ");
-    scanf("%s" , nome);
+    printf("Digite o nome da Cidade: \n");
+    scanf("%s", nomecidade1);
+    while (getchar() != '\n'); // Limpa o enter que sobrou no buffer
 
-    print("Digite a população:  ");
+    printf("Digite a população: \n");
     scanf("%d", &populacao);
 
-    print("Digite a área: ");
+    printf("Digite a área em km²:  \n");
     scanf("%f", &area);
+    while (getchar() != '\n'); // Limpa o enter que sobrou no buffer
 
-    print("Digite o PIB: ");
+    printf("Digite o PIB:  \n");
     scanf("%f", &pib);
+    while (getchar() != '\n'); // Limpa o enter que sobrou no buffer
 
-    print("Digite o número de pontos turísticos: ");
-    scanf("%d", &pontos_turisticos);
+    printf("Digite o número de pontos turísticos: \n");
+    scanf("%d", &pontosturisticos);
 
-
-    // Exibição dos Dados das Cartas:
-
-    printf("\n --- Dados da Cidade --- \n");
-    printf("Código: %d\n", codigo);
-    printf("Nome: %s\n", nome);
+    // Exibição organizada das informações
+    printf("\nCarta 1:\n");
+    printf("Estado: %c\n", estado1);
+    printf("Código: %s\n", codigocarta1);
+    printf("Nome da Cidade: %s\n", nomecidade1);
     printf("População: %d\n", populacao);
     printf("Área: %.2f km²\n", area);
-    printf("PIB: %.2f bilhões\n", pib);
-    printf("Pontos Turísticos: %d\n", pontos_turisticos);
+    printf("PIB: %.2f bilhões de reais\n", pib);
+    printf("Número de Pontos Turísticos: %d\n", pontosturisticos);
 
-    // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
-    // Exiba os valores inseridos para cada atributo da cidade, um por linha.
+    // Carta 2
+    char estado2;
+    char codigocarta2[20];
+    char nomecidade2[50];
+    int populacao2;
+    float area2;
+    float pib2;
+    int pontosturisticos2;
+
+    // Leitura dos dados da segunda carta
+    printf("\n--- Segunda Carta ---\n");
+
+    printf("Digite o Estado: \n");
+    scanf(" %c", &estado2);
+
+    printf("Digite o código da carta: \n");
+    scanf("%s", codigocarta2);
+
+    printf("Digite o nome da Cidade: \n");
+    scanf("%s", nomecidade2);
+    while (getchar() != '\n'); // Limpa o enter que sobrou no buffer
+
+    printf("Digite a população: \n");
+    scanf("%d", &populacao2);
+
+    printf("Digite a área em km²:  \n");
+    scanf("%f", &area2);
+    while (getchar() != '\n'); // Limpa o enter que sobrou no buffer
+
+    printf("Digite o PIB:  \n");
+    scanf("%f", &pib2);
+    while (getchar() != '\n'); // Limpa o enter que sobrou no buffer
+
+    printf("Digite o número de pontos turísticos: \n");
+    scanf("%d", &pontosturisticos2);
+
+    // Exibição dos dados da segunda carta
+    printf("\nCarta 2:\n");
+    printf("Estado: %c\n", estado2);
+    printf("Código: %s\n", codigocarta2);
+    printf("Nome da Cidade: %s\n", nomecidade2);
+    printf("População: %d\n", populacao2);
+    printf("Área: %.2f km²\n", area2);
+    printf("PIB: %.2f bilhões de reais\n", pib2);
+    printf("Número de Pontos Turísticos: %d\n", pontosturisticos2);
 
     return 0;
 }
