@@ -106,5 +106,19 @@ int main(){
     printf("Densidade Populacional: %.2f hab/Km²\n", densidade2);
     printf("PIB per capita: %.2f reais\n", pibpercapita2);
 
+    // Comparação por População
+    printf("\nComparação das Cartas ( Atributo: População): .\n");
+    printf("Carta 1 - %s (%c): %d habitantes\n", nomecidade1, estado1, populacao);
+    printf("Carta 2 - %s (%c): %d habitantes\n", nomecidade2, estado2, populacao2);
+
+    if (populacao > populacao2) {
+        printf("Resultado: Carta 1 (%s) venceu!\n", nomecidade1);
+    } else if (populacao2 > populacao) {
+        printf("Resultado: Carta 2 (%s) venceu!\n", nomecidade2);
+    } else {
+        printf("Resultado: Empate!\n");
+    }
+
+
     return 0;
 }
